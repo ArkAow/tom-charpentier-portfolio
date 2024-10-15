@@ -19,7 +19,7 @@ export default function Hero() {
         <section id="hero"
          className="w-full pt-16">
             
-          <div class="parallax-container relative overflow-hidden">
+          <div class="star-parallax-container relative overflow-hidden">
             <div className="w-full flex flex-col items-center justify-center font-bold mt-16 p-6">
                 <h1 className="text-4xl">Tom Charpentier</h1>
                 <p className="text-lg text-secondary">Third year student in Computer Science</p>

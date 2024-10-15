@@ -126,17 +126,21 @@
   transform: translateZ(0);
 }
 
-.parallax-container {
+.star-parallax-container {
   position: relative;
   height: 100vh;
-  overflow: hidden;
+}
+
+.city-parallax-container {
+  position: relative;
+  height: 100vh;
+  margin-top: -90vh;
 }
 
 .parallax-layer {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
 }
 
 .stars-1 { 
@@ -148,6 +152,19 @@
 .stars-3 { 
   z-index: 1;
 }
+
+.city-1 {
+  z-index: 6;
+}
+
+.city-2 {
+  z-index: 5;
+}
+
+.city-3 {
+  z-index: 4;
+}
+
 
 @keyframes mulShdSpin {
   0%,
