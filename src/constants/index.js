@@ -15,12 +15,12 @@ export const redirectLinks = [
 
   export const navLinks = [
     {
-      id: "about",
-      title: "About",
-    },
-    {
       id: "projects",
       title: "Projects",
+    },
+    {
+      id: "about",
+      title: "About",
     },
     {
       id: "experience",
