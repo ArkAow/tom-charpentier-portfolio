@@ -17,7 +17,9 @@ export default function NavBar() {
                     <img src="/circular-logo.png" 
                         alt="logo" 
                         className="w-12 h-12 object-contain"/>
-                    <p className="text-white text-[18px] font-bold"> Tom Charpentier </p>     
+                    <p className="lg:flex hidden text-white text-[18px] font-bold">
+                        Welcome <span className="font-normal ml-1">to my portfolio</span>
+                    </p>
                 </Link>              
             </div> 
 
