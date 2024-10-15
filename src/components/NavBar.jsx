@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { styles } from "../styles"
 import { redirectLinks } from "../constants";
 import { navLinks } from "../constants";
@@ -7,14 +7,30 @@ import { Link } from "react-router-dom";
 export default function NavBar() {
     const [active, setActive] = useState("");
     const [toggle, setToggle] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollTop = window.scrollY;
+        if (scrollTop > 70) {
+          setScrolled(true);
+        } else {
+          setScrolled(false);
+        }
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
-        <nav className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20`}>
+        <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"}`}>
             <div className="flex items-center justify-start flex-1">
                 <Link to='/'
                     className='flex items-center gap-2'
                     onClick={() => {setActive(""); window.scrollTo(0, 0);}}>
-                    <img src="/circular-logo.png" 
+                    <img src="/logos/circular-logo.png" 
                         alt="logo" 
                         className="w-12 h-12 object-contain"/>
                     <p className="lg:flex hidden text-white text-[18px] font-bold">
@@ -34,7 +50,7 @@ export default function NavBar() {
             </ul>
 
             <div className="flex justify-end items-center flex-1">
-                <img src={toggle ? "/close.svg" : "/menu.svg"} 
+                <img src={toggle ? "/icons/close.svg" : "/icons/menu.svg"} 
                     alt="menu" 
                     className="w-[28px] w-[28px] object-container cursor-pointer" 
                     onClick={() => setToggle(!toggle)}/>
