@@ -14,7 +14,7 @@ export default function NavBar() {
                 <Link to='/'
                     className='flex items-center gap-2'
                     onClick={() => {setActive(""); window.scrollTo(0, 0);}}>
-                    <img src="/circular-logo.png" 
+                    <img src="/logos/circular-logo.png" 
                         alt="logo" 
                         className="w-12 h-12 object-contain"/>
                     <p className="text-white text-[18px] font-bold"> Tom Charpentier </p>     
@@ -32,7 +32,7 @@ export default function NavBar() {
             </ul>
 
             <div className="flex justify-end items-center flex-1">
-                <img src={toggle ? "/close.svg" : "/menu.svg"} 
+                <img src={toggle ? "/icons/close.svg" : "/icons/menu.svg"} 
                     alt="menu" 
                     className="w-[28px] w-[28px] object-container cursor-pointer" 
                     onClick={() => setToggle(!toggle)}/>
