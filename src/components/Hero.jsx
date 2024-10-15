@@ -19,16 +19,16 @@ export default function Hero() {
         <section id="hero"
          className="w-full pt-16">
             
-            <div class="parallax-container relative overflow-hidden">
-                <div className="w-full flex flex-col items-center justify-center font-bold mt-16 p-6">
-                    <h1 className="text-4xl">Tom Charpentier</h1>
-                    <p className="text-lg text-secondary">Third year student in Computer Science</p>
-                </div>
-
-                <img src="/parallax/stars-1.png" class="parallax-layer stars-1 w-full mt-12" />
-                <img src="/parallax/stars-2.png" class="parallax-layer stars-2 w-full mt-8" />
-                <img src="/parallax/stars-3.png" class="parallax-layer stars-3 w-full" />
+          <div class="parallax-container relative overflow-hidden">
+            <div className="w-full flex flex-col items-center justify-center font-bold mt-16 p-6">
+                <h1 className="text-4xl">Tom Charpentier</h1>
+                <p className="text-lg text-secondary">Third year student in Computer Science</p>
             </div>
+
+            <img src="/parallax/stars-1.gif" className="parallax-layer stars-1 w-full" />
+            <img src="/parallax/stars-2.png" className="parallax-layer stars-2 w-full" />
+            <img src="/parallax/stars-3.gif" className="parallax-layer stars-3 w-full" />
+          </div>
         </section>
     );
 }
