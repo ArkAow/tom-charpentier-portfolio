@@ -153,15 +153,19 @@
   z-index: 1;
 }
 
-.city-1 {
+.city-grd {
   z-index: 6;
 }
 
-.city-2 {
+.city-fg {
+  z-index: 7;
+}
+
+.city-bg {
   z-index: 5;
 }
 
-.city-3 {
+.city-moon {
   z-index: 4;
   margin-left: 33%;
 }
