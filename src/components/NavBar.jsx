@@ -52,7 +52,7 @@ export default function NavBar() {
             <div className="flex justify-end items-center flex-1">
                 <img src={toggle ? "/icons/close.svg" : "/icons/menu.svg"} 
                     alt="menu" 
-                    className="w-[28px] w-[28px] object-container cursor-pointer" 
+                    className="w-[28px] h-[28px] object-container cursor-pointer" 
                     onClick={() => setToggle(!toggle)}/>
                     
                 <div className={`${!toggle ? "hidden" : "flex"} p-6 absolute top-20 right-0 mx-4 min-w-[140px] min-w-[20%] z-10 bg-black bg-opacity-50 rounded-xl`}>
