@@ -14,7 +14,7 @@ const App = () => {
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
           <Navbar />
           <Hero /> 
-          <City /> {/* faire que la taille de la section s adapte au contenu */}
+          <City />
         </div>  
         <About />
         <Experience />

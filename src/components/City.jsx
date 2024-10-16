@@ -2,45 +2,42 @@ import React, { useEffect } from "react";
 
 export default function City() {
     useEffect(() => {
-        const handleScroll = () => {
-          const scrollPosition = window.scrollY;
-          
-          document.querySelector('.city-2').style.transform = `translateY(${scrollPosition * -0.8}px)`;
-          document.querySelector('.city-3').style.transform = `translateY(${scrollPosition * -0.8}px)`;
-        };
-        window.addEventListener('scroll', handleScroll);
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
         
-        return () => window.removeEventListener('scroll', handleScroll);
-        }, []);
+        document.querySelector('.city-2').style.transform = `translateY(${scrollPosition * -0.8}px)`;
+        document.querySelector('.city-3').style.transform = `translateY(${scrollPosition * -0.8}px)`;
+      };
+      window.addEventListener('scroll', handleScroll);     
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
-        useEffect(() => {
-          const handleParallax = (e) => {
-            const parallax = document.querySelector('.parallax');
-            const back = document.querySelector('.parallax-back-layer');
-            const front = document.querySelector('.parallax-front-layer');
-            const sFront = 1000;
-            const sBack = 2500;
-            const xOffest = -800;
-      
-            if (parallax && front && back) {
-              const x = e.clientX + xOffest;
+    useEffect(() => {
+      const handleParallax = (e) => {
+        const parallax = document.querySelector('.parallax');
+        const back = document.querySelector('.parallax-back-layer');
+        const front = document.querySelector('.parallax-front-layer');
+        const sFront = 1000;
+        const sBack = 2500;
+        const xOffest = -2;
 
-              back.style.transform = `translateX(${x / sBack}%) translateZ(7px)`;
-              front.style.transform = `translateX(${x / sFront}%) translateZ(8px)`;
-            }
-          };
-      
-          window.addEventListener('mousemove', handleParallax);
-      
-          return () => window.removeEventListener('mousemove', handleParallax);
-        }, []);
+        if (parallax && front && back) {
+          const x = e.clientX;
+
+          back.style.transform = `translateX(${(x / sBack) + xOffest}%)`;
+          front.style.transform = `translateX(${(x / sFront) + xOffest}%)`;
+        }
+      };
+      window.addEventListener('mousemove', handleParallax);
+      return () => window.removeEventListener('mousemove', handleParallax);
+    }, []);
 
     return (
         <section id="city"
-         className="w-screen relative">
+         className="w-[100%] h-fit relative">
             
-          <div className="city-parallax-container relative">
-            <img src="/parallax/city-moon.png" className="parallax-layer city-moon w-[40vw]" />
+          <div className="city-parallax-container w-screen relative">
+            <img src="/parallax/city-moon.png" className="parallax-layer city-moon" />
 
             <div className="parallax">
 

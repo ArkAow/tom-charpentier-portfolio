@@ -132,14 +132,14 @@
 }
 
 .city-parallax-container {
-  height: 100vh;
+  height: 70vw;
   margin-top: -60vh;
+  overflow: hidden;
 }
 
 .parallax-layer {
+  width: 200%;
   position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .stars-3 { 
@@ -155,6 +155,7 @@
 }
 
 .city-moon {
+  width: 40vw;
   z-index: 4px;
   margin-left: 33%;
 }
@@ -165,20 +166,18 @@
 
 .city-grd {
   z-index: 6px;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 
 .city-fg {
   z-index: 7px;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 
 .city-buildings {
-  margin-top: 5%;
+  margin-top: 8%;
   z-index: 8;
 }
-
-
 
 @keyframes mulShdSpin {
   0%,
