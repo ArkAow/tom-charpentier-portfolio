@@ -18,10 +18,12 @@ export default function City() {
          className="w-full">
             
           <div className="city-parallax-container relative">
-            <img src="/parallax/city-ground.png" className="parallax-layer city-grd" />
-            <img src="/parallax/city-foreground.png" className="parallax-layer city-fg" />
-            <img src="/parallax/city-background.png" className="parallax-layer city-bg" />
             <img src="/parallax/city-moon.png" className="parallax-layer city-moon w-[40vw]" />
+            <img src="/parallax/city-ground.png" className="parallax-layer city-grd" />
+            <img src="/parallax/city-background.png" className="parallax-layer city-bg" />
+            <img src="/parallax/city-foreground.png" className="parallax-layer city-fg" />
+            <img src="/parallax/city-left-building.png" className="parallax-layer city-bld" />
+            <img src="/parallax/city-right-building.png" className="parallax-layer city-bld" />
           </div>
         </section>
     );
