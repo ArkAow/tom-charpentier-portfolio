@@ -18,19 +18,15 @@ export default function City() {
             const parallax = document.querySelector('.parallax');
             const back = document.querySelector('.parallax-back-layer');
             const front = document.querySelector('.parallax-front-layer');
-            const bg = document.querySelector('.parallax-bg-layer');
             const sFront = 1000;
             const sBack = 2500;
-            const xOffest = -800
+            const xOffest = -800;
       
             if (parallax && front && back) {
               const x = e.clientX + xOffest;
-              const y = e.clientY;
 
-              bg.style.transform = `translateX(0%)`;
-              back.style.transform = `translateX(${x / sBack}%)`;
-              front.style.transform = `translateX(${x / sFront}%)`;
-              
+              back.style.transform = `translateX(${x / sBack}%) translateZ(7px)`;
+              front.style.transform = `translateX(${x / sFront}%) translateZ(8px)`;
             }
           };
       
@@ -49,8 +45,8 @@ export default function City() {
             <div className="parallax">
 
               <div className="parallax-bg-layer">
-                <img src="/parallax/city-ground.png" className="parallax-layer city-grd" />
-                <img src="/parallax/city-background.png" className="parallax-layer city-bg" />                
+                <img src="/parallax/city-background.png" className="parallax-layer city-bg" />
+                <img src="/parallax/city-ground.png" className="parallax-layer city-grd" />                
               </div>
 
               <div className="parallax-back-layer">
