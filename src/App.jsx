@@ -13,8 +13,8 @@ const App = () => {
       <div className='relative z-0 bg-primary flex-col'>
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
           <Navbar />
-          <Hero />
-          <City /> {'faire que la taille de la section s adapte au contenu'}
+          <Hero /> 
+          <City /> {/* faire que la taille de la section s adapte au contenu */}
         </div>  
         <About />
         <Experience />

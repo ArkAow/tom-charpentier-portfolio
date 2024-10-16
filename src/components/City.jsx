@@ -18,16 +18,19 @@ export default function City() {
             const parallax = document.querySelector('.parallax');
             const back = document.querySelector('.parallax-back-layer');
             const front = document.querySelector('.parallax-front-layer');
-            const sFront = 300;
-            const sBack = 400;
+            const bg = document.querySelector('.parallax-bg-layer');
+            const sFront = 1000;
+            const sBack = 2500;
             const xOffest = -800
       
             if (parallax && front && back) {
               const x = e.clientX + xOffest;
               const y = e.clientY;
-      
-              back.style.transform = `translate(${x / sBack}%, ${y / sBack}%)`;
-              front.style.transform = `translate(${x / sFront}%, ${y / sFront}%)`;
+
+              bg.style.transform = `translateX(0%)`;
+              back.style.transform = `translateX(${x / sBack}%)`;
+              front.style.transform = `translateX(${x / sFront}%)`;
+              
             }
           };
       
@@ -38,26 +41,27 @@ export default function City() {
 
     return (
         <section id="city"
-         className="w-full">
+         className="w-screen relative">
             
           <div className="city-parallax-container relative">
             <img src="/parallax/city-moon.png" className="parallax-layer city-moon w-[40vw]" />
 
             <div className="parallax">
 
+              <div className="parallax-bg-layer">
+                <img src="/parallax/city-ground.png" className="parallax-layer city-grd" />
+                <img src="/parallax/city-background.png" className="parallax-layer city-bg" />                
+              </div>
+
               <div className="parallax-back-layer">
                 <img src="/parallax/city-foreground.png" className="parallax-layer city-fg" />
               </div>           
 
               <div className="parallax-front-layer">
-                <img src="/parallax/city-left-building.png" className="parallax-layer city-bld" />
-                <img src="/parallax/city-right-building.png" className="parallax-layer city-bld" />
+                <img src="/parallax/city-left-building.png" className="parallax-layer city-buildings" />
+                <img src="/parallax/city-right-building.png" className="parallax-layer city-buildings" />
               </div>
-            </div>
-
-            <img src="/parallax/city-ground.png" className="parallax-layer city-grd" />
-            <img src="/parallax/city-background.png" className="parallax-layer city-bg" />
-            
+            </div>           
           </div>
         </section>
     );
