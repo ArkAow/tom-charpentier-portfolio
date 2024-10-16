@@ -17,7 +17,7 @@ export default function City() {
         <section id="city"
          className="w-full">
             
-          <div class="city-parallax-container relative">
+          <div className="city-parallax-container relative">
             <img src="/parallax/city-ground.png" className="parallax-layer city-grd" />
             <img src="/parallax/city-foreground.png" className="parallax-layer city-fg" />
             <img src="/parallax/city-background.png" className="parallax-layer city-bg" />

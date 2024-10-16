@@ -132,7 +132,6 @@
 }
 
 .city-parallax-container {
-  position: relative;
   height: 100vh;
   margin-top: -60vh;
 }
@@ -155,10 +154,12 @@
 
 .city-grd {
   z-index: 6;
+  margin-top: 5%;
 }
 
 .city-fg {
   z-index: 7;
+  margin-top: 5%;
 }
 
 .city-bg {
