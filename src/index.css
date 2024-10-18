@@ -134,11 +134,9 @@
 .city-parallax-container {
   height: 70vw;
   margin-top: -60vh;
-  overflow: hidden;
 }
 
 .parallax-layer {
-  width: 200%;
   position: absolute;
 }
 
