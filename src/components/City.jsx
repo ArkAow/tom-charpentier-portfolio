@@ -38,9 +38,9 @@ export default function City() {
 
     return (
         <section id="city"
-         className="w-[100%] h-fit relative">
+         className="w-screen h-fit relative">
             
-          <div className="city-parallax-container w-screen relative">
+          <div className="city-parallax-container relative">
             <img src="/parallax/city-moon.png" className="parallax-layer city-moon" />
 
             <div className="parallax">
