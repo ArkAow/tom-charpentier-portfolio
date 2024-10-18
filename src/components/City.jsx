@@ -5,8 +5,10 @@ export default function City() {
       const handleScroll = () => {
         const scrollPosition = window.scrollY;
         
-        document.querySelector('.city-2').style.transform = `translateY(${scrollPosition * -0.8}px)`;
-        document.querySelector('.city-3').style.transform = `translateY(${scrollPosition * -0.8}px)`;
+        document.querySelector('.city-moon').style.transform = `translateY(${scrollPosition * -0.3}px)`;
+        document.querySelector('.city-bg-1').style.transform = `translateY(${scrollPosition * -0.3}px)`;
+        document.querySelector('.city-bg-2').style.transform = `translateY(${scrollPosition * -0.2}px)`;
+        document.querySelector('.city-bg-3').style.transform = `translateY(${scrollPosition * -0.1}px)`;
       };
       window.addEventListener('scroll', handleScroll);     
       return () => window.removeEventListener('scroll', handleScroll);
@@ -44,8 +46,9 @@ export default function City() {
             <div className="parallax">
 
               <div className="parallax-bg-layer">
-              <img src="/parallax/city-background-1.png" className="parallax-layer city-bg" />
-              <img src="/parallax/city-background-2.png" className="parallax-layer city-bg" />
+                <img src="/parallax/city-background-1.png" className="parallax-layer city-bg-1" />
+                <img src="/parallax/city-background-2.png" className="parallax-layer city-bg-2" />
+                <img src="/parallax/city-background-3.png" className="parallax-layer city-bg-3" />
                 <img src="/parallax/city-ground.png" className="parallax-layer city-grd" />                
               </div>
 
