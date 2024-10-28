@@ -20,7 +20,7 @@ export default function About() {
                 </span>
             </h1>
 
-            <div className="flex flox-row w-screen p-12">
+            <div className="flex flox-row w-screen p-12 text-justify">
                 <div className="mt-8 flex flex-col w-3/4 items-left relative">
                     <p className="mb-2">
                         Hi, I am Tom Charpentier.
@@ -33,10 +33,15 @@ export default function About() {
                     Vivamus varius auctor nulla, non semper sem pharetra vitae. Sed eu varius arcu. Proin molestie sem sed purus ornare cursus. Aliquam quis tellus et diam pretium varius. Etiam id ipsum tincidunt enim varius ultricies ut vitae erat. Proin ut lobortis mi, vel placerat diam. Nullam ut cursus eros. Fusce dignissim condimentum tincidunt. Suspendisse tincidunt tempor velit ac malesuada. Nunc auctor turpis at gravida interdum.
                     </p>
                 </div> 
-                <div className="items-end justify-end">
+                <div className="items-end justify-end relative ml-[5%]">
                     <img 
-                        src="/res/About-photo-back-image.png" 
-                        className="ml-[30%] hidden md:flex w-[40vw] transition-all duration-300 hover:scale-110"/>
+                        src="/res/about-photo.png" 
+                        className="absolute top-5 left-20 hidden md:flex w-[15vw] transition-transform duration-300 hover:scale-125 z-10"
+                    />
+                    <img 
+                        src="/res/about-photo-back-image.png" 
+                        className="hidden md:flex w-[40vw]"
+                    />
                 </div>
             </div>
             
