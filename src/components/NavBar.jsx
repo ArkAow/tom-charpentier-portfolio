@@ -12,19 +12,6 @@ export default function NavBar() {
     useEffect(() => {
       const handleScroll = () => {
         const YScroll = window.scrollY;
-        const NavbarYValue = 250;
-
-        if (YScroll < NavbarYValue) {
-            setActive("");
-        }
-        else {
-            for (let i = navLinks.length - 1; i >= 0; i--) {
-                if (YScroll >= navLinks[i].y) {
-                  setActive(navLinks[i].title);
-                  break;
-                }
-            }
-        }
 
         if (YScroll > 70) {
           setScrolled(true);
