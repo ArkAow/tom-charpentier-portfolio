@@ -11,8 +11,22 @@ export default function NavBar() {
 
     useEffect(() => {
       const handleScroll = () => {
-        const scrollTop = window.scrollY;
-        if (scrollTop > 70) {
+        const YScroll = window.scrollY;
+        const NavbarYValue = 250;
+
+        if (YScroll < NavbarYValue) {
+            setActive("");
+        }
+        else {
+            for (let i = navLinks.length - 1; i >= 0; i--) {
+                if (YScroll >= navLinks[i].y) {
+                  setActive(navLinks[i].title);
+                  break;
+                }
+            }
+        }
+
+        if (YScroll > 70) {
           setScrolled(true);
         } else {
           setScrolled(false);
@@ -43,7 +57,7 @@ export default function NavBar() {
                 {navLinks.map((nav) => (
                     <li key={nav.id}
                      className={`${active === nav.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
-                     onClick={() => setActive(nav.title)}>
+                     onClick={() => {setActive(nav.title); window.scrollTo(0, nav.y);}}>
                         <a href={`#${nav.id}`}>{nav.title}</a>
                     </li>
                 ))}
@@ -55,7 +69,7 @@ export default function NavBar() {
                     className="w-[28px] h-[28px] object-container cursor-pointer" 
                     onClick={() => setToggle(!toggle)}/>
                     
-                <div className={`${!toggle ? "hidden" : "flex"} p-6 absolute top-20 right-0 mx-4  min-w-[20%] z-10 bg-black bg-opacity-50 rounded-xl`}>
+                <div className={`${!toggle ? "hidden" : "flex"} p-6 absolute top-20 right-0 mx-4  min-w-[20%] z-10 bg-black bg-opacity-80 rounded-xl`}>
 
                     <ul className="list-none flex flex-col gap-10">
                         <div className='sm:hidden flex flex-col gap-10'>
