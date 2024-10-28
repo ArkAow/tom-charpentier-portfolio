@@ -20,18 +20,26 @@ export default function About() {
                 </span>
             </h1>
 
-            <div className="mt-8 flex flex-col w-5/6 items-left">
-                <p className="mb-2">
-                    Hi, I am Tom Charpentier.
-                    I am a third year computer science student at the <em>"IUT du Limousin"</em>.
-                </p>
-                <p className="mb-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula ex tortor, sed blandit risus facilisis quis. Nulla fermentum orci eget porta molestie. Aliquam erat volutpat. Curabitur et nibh eget nunc sodales eleifend eget nec lectus. Fusce et diam ac quam eleifend porttitor in a tortor. Ut sit amet lacinia quam. Curabitur et malesuada orci, at dapibus sem. Aliquam fermentum leo enim, sit amet lobortis quam viverra in. Donec sed mauris turpis. Suspendisse gravida odio tempus, tempor magna sed, malesuada diam. Phasellus pretium odio at justo dictum, at rhoncus eros tempor. Ut viverra at felis ut mattis.
-                </p>
-                <p className="mb-2">
-                Vivamus varius auctor nulla, non semper sem pharetra vitae. Sed eu varius arcu. Proin molestie sem sed purus ornare cursus. Aliquam quis tellus et diam pretium varius. Etiam id ipsum tincidunt enim varius ultricies ut vitae erat. Proin ut lobortis mi, vel placerat diam. Nullam ut cursus eros. Fusce dignissim condimentum tincidunt. Suspendisse tincidunt tempor velit ac malesuada. Nunc auctor turpis at gravida interdum.
-                </p>    
+            <div className="flex flox-row w-screen p-12">
+                <div className="mt-8 flex flex-col w-3/4 items-left relative">
+                    <p className="mb-2">
+                        Hi, I am Tom Charpentier.
+                        I am a third year computer science student at the <em>"IUT du Limousin"</em>.
+                    </p>
+                    <p className="mb-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula ex tortor, sed blandit risus facilisis quis. Nulla fermentum orci eget porta molestie. Aliquam erat volutpat. Curabitur et nibh eget nunc sodales eleifend eget nec lectus. Fusce et diam ac quam eleifend porttitor in a tortor. Ut sit amet lacinia quam. Curabitur et malesuada orci, at dapibus sem. Aliquam fermentum leo enim, sit amet lobortis quam viverra in. Donec sed mauris turpis. Suspendisse gravida odio tempus, tempor magna sed, malesuada diam. Phasellus pretium odio at justo dictum, at rhoncus eros tempor. Ut viverra at felis ut mattis.
+                    </p>
+                    <p className="mb-2">
+                    Vivamus varius auctor nulla, non semper sem pharetra vitae. Sed eu varius arcu. Proin molestie sem sed purus ornare cursus. Aliquam quis tellus et diam pretium varius. Etiam id ipsum tincidunt enim varius ultricies ut vitae erat. Proin ut lobortis mi, vel placerat diam. Nullam ut cursus eros. Fusce dignissim condimentum tincidunt. Suspendisse tincidunt tempor velit ac malesuada. Nunc auctor turpis at gravida interdum.
+                    </p>
+                </div> 
+                <div className="items-end justify-end">
+                    <img 
+                        src="/res/About-photo-back-image.png" 
+                        className="ml-[30%] hidden md:flex w-[40vw] transition-all duration-300 hover:scale-110"/>
+                </div>
             </div>
+            
         </div>
     );
 }

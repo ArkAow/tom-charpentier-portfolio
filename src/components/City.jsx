@@ -23,7 +23,7 @@ export default function City() {
         const sFront = 1000;
         const sBack1 = 3000;
         const sBack2 = 2000;
-        const xOffest = -2;
+        const xOffest = -1.5;
 
         if (parallax && front && back1 && back2) {
           const x = e.clientX;
