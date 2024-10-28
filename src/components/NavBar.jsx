@@ -69,6 +69,7 @@ export default function NavBar() {
                                 onClick={() => {
                                     setToggle(!toggle);
                                     setActive(nav.title);
+                                    window.scrollTo(0, nav.y);
                                 }}
                                 >
                                 <a href={`#${nav.id}`}>{nav.title}</a>
