@@ -2,7 +2,8 @@ import React from "react";
 
 export default function Experience() {
     return (
-        <div className="w-full flex flex-col items-left ml-12 justify-left font-bold mt-16 p-6">
+        <div id="experience"
+          className="w-screen flex flex-col items-left justify-left font-bold mt-16 pl-8">
             <h1 className="text-4xl relative">My Experience</h1>
             <p>some text</p>
             <p>languages, frameworks and tools caroussel</p>

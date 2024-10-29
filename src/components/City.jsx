@@ -37,7 +37,7 @@ export default function City() {
     }, []);
 
     return (
-        <section id="city"
+        <section id="projects"
          className="w-screen h-fit relative">
             
           <div className="city-parallax-container relative">

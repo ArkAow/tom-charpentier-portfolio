@@ -10,19 +10,26 @@ export default function NavBar() {
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
-      const handleScroll = () => {
-        const YScroll = window.scrollY;
+        const handleClickScroll = () => {
+            const element = document.getElementById(active);
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth'});
+            }
+          };
+    }, []);
 
-        if (YScroll > 70) {
-          setScrolled(true);
-        } else {
-          setScrolled(false);
-        }
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-  
-      return () => window.removeEventListener("scroll", handleScroll);
+    useEffect(() => {
+        const handleScroll = () => {
+            const YScroll = window.scrollY;
+
+            if (YScroll > 70) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     return (
@@ -44,7 +51,7 @@ export default function NavBar() {
                 {navLinks.map((nav) => (
                     <li key={nav.id}
                      className={`${active === nav.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
-                     onClick={() => {setActive(nav.title); window.scrollTo(0, nav.y);}}>
+                     onClick={() => {setActive(nav.title); handleClickScroll}}>
                         <a href={`#${nav.id}`}>{nav.title}</a>
                     </li>
                 ))}
@@ -69,9 +76,7 @@ export default function NavBar() {
                                 onClick={() => {
                                     setToggle(!toggle);
                                     setActive(nav.title);
-                                    window.scrollTo(0, nav.y);
-                                }}
-                                >
+                                    handleClickScroll;}}>
                                 <a href={`#${nav.id}`}>{nav.title}</a>
                                 </li>
                             ))}
