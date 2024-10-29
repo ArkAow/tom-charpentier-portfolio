@@ -17,21 +17,17 @@ export const redirectLinks = [
     {
       id: "projects",
       title: "Projects",
-      y: 550,
     },
     {
       id: "about",
       title: "About",
-      y: 1060,
     },
     {
       id: "experience",
       title: "Experience",
-      y: 1500,
     },
     {
       id: "contact",
       title: "Contact",
-      y: 2000,
     },
   ];
