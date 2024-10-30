@@ -4,6 +4,15 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      animation: {
+        scroll: "scroll 30s linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
       colors: {
         primary: "#050816",
         secondary: "#aaa6c3",

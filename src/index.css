@@ -182,6 +182,10 @@ html, body {
   z-index: 8;
 }
 
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {

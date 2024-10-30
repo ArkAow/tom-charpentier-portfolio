@@ -1,14 +1,14 @@
 import React from "react";
+import LogoCarousel from "./LogoCaroussel";
 
 export default function Experience() {
     return (
         <div id="experience"
-          className="w-screen flex flex-col items-left justify-left font-bold mt-16 pl-8">
-            <h1 className="text-4xl relative">My Experience</h1>
+          className="w-screen flex flex-col items-left justify-left mt-16 p-10">
+            <h1 className="text-4xl relative font-bold">My Experience</h1>
             <p>some text</p>
-            <p>languages, frameworks and tools caroussel</p>
+            <LogoCarousel/>
             <p>compagnies i've worked for animated cards</p>
-            
         </div>
     );
 }
