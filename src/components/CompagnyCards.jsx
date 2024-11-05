@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CompanyCards() {
   return (
-    <div className="pt-10 flex gap-5 justify-around">
+    <div className="pt-10 flex flex-wrap gap-5 justify-center">
       <button className="w-40 group relative h-24 rounded-lg border-2 border-[#050816] bg-gradient-to-b from-[#3f404e] to-[#050816] 
             overflow-hidden transition-grow duration-300 sm:focus:grow sm:focus:h-60 hover:border-[rgba(249,249,249,0.7)]">
         
