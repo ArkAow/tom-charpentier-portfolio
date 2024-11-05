@@ -1,5 +1,6 @@
 import React from "react";
 import LogoCarousel from "./LogoCaroussel";
+import CompagnyCards from "./CompagnyCards";
 
 export default function Experience() {
     return (
@@ -18,8 +19,13 @@ export default function Experience() {
                 Here are some technologies I have worked with :
             </p>
             <LogoCarousel/>
-            
-            <p>compagnies i've worked for -- animated cards</p>
+            <p className="text-justify md:pr-20">
+                In the meantime, I have had the opportunities to work with several companies, where I gained valuable hands-on experience in a professional environment. 
+                Through these roles, I was able to apply my technical skills, collaborate with cross-functional teams, and gain insights into industry practices and workflows.
+                <br/><br/>
+                Here are some companies I have worked for :
+                <CompagnyCards />
+            </p>
         </div>
     );
 }
