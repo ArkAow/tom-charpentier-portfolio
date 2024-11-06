@@ -2,8 +2,10 @@ import React from "react";
 
 export default function CompanyCards() {
   return (
-    <div className="pt-10 flex flex-wrap gap-5 justify-center">
-      <button className="w-40 group relative h-24 rounded-lg border-2 border-[#050816] bg-gradient-to-b from-[#3f404e] to-[#050816] 
+    <div className="pt-10 flex flex-wrap gap-5 justify-start">
+
+      {/* L'université du Limousin*/}
+      <button className="w-1/2 group relative h-24 rounded-lg border-2 border-primary bg-tertiary
             overflow-hidden transition-grow duration-300 sm:focus:grow sm:focus:h-60 hover:border-[rgba(249,249,249,0.7)]">
         
         <img
@@ -26,7 +28,8 @@ export default function CompanyCards() {
         </div>
       </button >
 
-      <button className="w-40 group relative h-24 rounded-lg border-2 border-[#050816] bg-gradient-to-b from-[#3f404e] to-[#050816] 
+      {/* Biotonix */}
+      <button className="min-w-40 w-1/2 group relative h-24 rounded-lg border-2 border-primary bg-tertiary
             overflow-hidden transition-grow duration-300 sm:focus:grow sm:focus:h-60 hover:border-[rgba(249,249,249,0.7)]">
         
         <img
@@ -48,6 +51,22 @@ export default function CompanyCards() {
             </p>
         </div>
       </button >
+
+      <hr className="w-1/2 border-t-4 border-secondary rounded-xl"/>
+      
+      {/* En recherche */}
+      <div className=" min-w-40 w-1/2 group relative h-24 rounded-lg border-2 border-primary bg-tertiary
+            overflow-hidden transition-grow duration-300 hover:border-[rgba(249,249,249,0.7)]">
+        
+        <div className="z-10 absolute left-5 top-1/2 transform -translate-y-1/2 text-white text-sm font-bold">
+          <p className="text-left w-11/12">
+              Currently looking for a new internship opportunity
+              <br/>
+              <span className="font-medium hidden md:flex">16 weeks - from February 24 to June 14, 2025</span>
+          </p>
+        </div>
+
+      </div >
     </div>
   );
 }
