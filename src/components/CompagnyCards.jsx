@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function CompanyCards() {
   return (
@@ -25,6 +26,11 @@ export default function CompanyCards() {
                 In my third year, I completed a course scheduling project for my IUT, where my main responsibility was to create a detailed course planning system.
                 <span className="hidden lg:flex">This experience allowed me to strengthen my project management skills, communicate effectively with clients, and deliver a solution that met the needs of my IUT.</span>
             </p>
+            <a 
+              href="https://www.iut.unilim.fr/"
+              className="text-red-950 underline mt-4 mr-4 inline-block">
+                iut.unilim.fr
+            </a >
         </div>
       </button >
 
@@ -38,7 +44,7 @@ export default function CompanyCards() {
           alt="logo"/>
 
         <img
-          className="absolute inset-0 w-full h-full opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 group-focus:opacity-100 z-0 object-cover"
+          className="absolute inset-0 w-full h-full opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 group-focus:opacity-100 object-cover"
           src="/res/biotonix-bg.png"
           alt="background"/>
 
@@ -49,23 +55,27 @@ export default function CompanyCards() {
                 <br/>
                 <span className="hidden lg:flex">In this role, I developed new features and debugged the application using tools like Angular and .NET. Working in a foreign country improved my adaptability and cross-cultural communication skills, making this an valuable professional and personnal experience.</span>
             </p>
+            <a 
+              href="https://biotonix.com/"
+              className="text-blue-600 underline mt-4 mr-10 inline-block">
+                biotonix.com
+              </a >
         </div>
       </button >
 
       <hr className="w-1/2 border-t-4 border-secondary rounded-xl"/>
       
       {/* En recherche */}
-      <div className=" min-w-40 w-1/2 group relative h-24 rounded-lg border-2 border-primary bg-tertiary
+      <div className=" min-w-40 w-1/2 group relative h-24 z-10 rounded-lg border-2 border-primary bg-tertiary
             overflow-hidden transition-grow duration-300 hover:border-[rgba(249,249,249,0.7)]">
         
         <div className="z-10 absolute left-5 top-1/2 transform -translate-y-1/2 text-white text-sm font-bold">
-          <p className="text-left w-11/12">
+          <p className="text-left">
               Currently looking for a new internship opportunity
               <br/>
               <span className="font-medium hidden md:flex">16 weeks - from February 24 to June 14, 2025</span>
           </p>
         </div>
-
       </div >
     </div>
   );
