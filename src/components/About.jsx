@@ -14,7 +14,11 @@ export default function About() {
 
     return (
         <div id="about"
-          className="w-full flex flex-col items-center mt-16 p-10">
+          className="relative w-full flex flex-col items-center mt-16 p-10">
+
+            <div className="absolute inset-0  top-3 -left-24 -rotate-[6deg] transform bg-[url('/res/dot.svg')] bg-repeat bg-[length:20px_20px] opacity-20 -z-10" 
+                style={{ width: "150%", height: "60%" }} />
+
             <h1 className="font-bold text-4xl relative"> About
                 <span className="relative inline-block ml-2"> Me
                     <span className={`h-1 border-t-4 border-white-100 rounded-xl mt-1 top-full transition-all duration-500 ${animate ? 'w-0 absolute right-0' : 'w-full absolute left-0'}`}></span>
@@ -22,7 +26,7 @@ export default function About() {
             </h1>
 
             <div className="flex flox-row w-screen p-12 text-justify">
-                <div className="mt-8 flex flex-col w-3/4 items-left relative">
+                <div className="mt-8 flex flex-col w-full md:w-3/4 items-left relative">
                     <div className="relative z-10">
                         <p className="mb-2">
                             Hi, I am Tom Charpentier.
