@@ -63,7 +63,7 @@ export default function CompanyCards() {
         </div>
       </button >
 
-      <hr className="w-1/2 border-t-4 border-secondary rounded-xl"/>
+      <hr className="w-1/2 border-t-4 border-accent rounded-xl"/>
       
       {/* En recherche */}
       <div className=" min-w-40 w-1/2 group relative h-24 z-10 rounded-lg border-2 border-primary bg-tertiary
