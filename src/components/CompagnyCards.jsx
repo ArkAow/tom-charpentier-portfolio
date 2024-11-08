@@ -21,7 +21,7 @@ export default function CompanyCards() {
 
         <div className="opacity-0 z-10 sm:group-focus:opacity-100 absolute left-36 top-1/2 transform -translate-y-1/2 text-white text-sm font-medium">
             <p className="text-justify w-11/12">
-                During my studies, I had worked on various group projects, known as SAEs (Situations d’Apprentissage et d’Évaluation), included by my school curriculum.
+                During my studies, I worked on various group projects, known as SAEs (Situations d’Apprentissage et d’Évaluation), included by my school curriculum.
                 <br/>
                 In my third year, I completed a course scheduling project for my IUT, where my main responsibility was to create a detailed course planning system.
                 <span className="hidden lg:flex">This experience allowed me to strengthen my project management skills, communicate effectively with clients, and deliver a solution that met the needs of my IUT.</span>
