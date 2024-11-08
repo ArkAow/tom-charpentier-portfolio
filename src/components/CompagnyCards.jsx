@@ -20,7 +20,7 @@ export default function CompanyCards() {
           alt="background"/>
 
         <div className="opacity-0 z-10 sm:group-focus:opacity-100 absolute left-36 top-1/2 transform -translate-y-1/2 text-white text-sm font-medium">
-            <p className="text-justify w-11/12">
+            <p className="text-justify w-full pr-5">
                 During my studies, I worked on various group projects, known as SAEs (Situations d’Apprentissage et d’Évaluation), included by my school curriculum.
                 <br/>
                 In my third year, I completed a course scheduling project for my IUT, where my main responsibility was to create a detailed course planning system.
@@ -28,7 +28,7 @@ export default function CompanyCards() {
             </p>
             <a 
               href="https://www.iut.unilim.fr/"
-              className="text-red-950 underline mt-4 mr-4 inline-block">
+              className="text-red-950 underline inline-block">
                 iut.unilim.fr
             </a >
         </div>
@@ -49,15 +49,16 @@ export default function CompanyCards() {
           alt="background"/>
 
         <div className="opacity-0 z-10 sm:group-focus:opacity-100 absolute left-40 top-1/2 transform -translate-y-1/2 text-black text-sm font-medium">
-            <p className="text-justify w-11/12">
-                During my second year in computer science, I had the opportunity to intern in Canada, thanks to a partnership between my IUT and the CEGEP of Trois-Rivières, near Montreal. 
+            <p className="text-justify w-full pr-5">
+                During my second year in computer science, I had the opportunity to intern in Canada, thanks to a partnership between my IUT and the CEGEP of Trois-Rivières, near Montreal.
+                <br/>
                 I took this chance to work in Quebec as a Junior Full Stack Developer at Biotonix, a company specializing in health technology, where I contributed to their BTX app.
                 <br/>
-                <span className="hidden lg:flex">In this role, I developed new features and debugged the application using tools like Angular and .NET. Working in a foreign country improved my adaptability and cross-cultural communication skills, making this an valuable professional and personnal experience.</span>
+                <span className="hidden lg:flex">In this role, I developed new features and debugged the application using tools like Angular and .NET.<br/>Working in a foreign country improved my adaptability and cross-cultural communication skills, making this an valuable professional and personnal experience.</span>
             </p>
             <a 
               href="https://biotonix.com/"
-              className="text-blue-600 underline mt-4 mr-10 inline-block">
+              className="text-blue-600 underline inline-block">
                 biotonix.com
               </a >
         </div>
@@ -70,7 +71,7 @@ export default function CompanyCards() {
             overflow-hidden transition-grow duration-300 hover:border-[rgba(249,249,249,0.7)]">
         
         <div className="z-10 absolute left-5 top-1/2 transform -translate-y-1/2 text-white text-sm font-bold">
-          <p className="text-left">
+          <p className="text-left pr-5">
               Currently looking for a new internship opportunity
               <br/>
               <span className="font-medium hidden md:flex">16 weeks - from February 24 to June 14, 2025</span>

@@ -18,7 +18,8 @@ export default function Hero() {
     return (
         <section id="hero"
          className="w-full pt-16">
-            
+          <p className="flex sm:hidden w-full justify-center text-red-600 px-10 pt-5">
+            This website is meant to be fully experienced on a computer screen!</p>
           <div className="star-parallax-container relative overflow-hidden">
             <div className="w-full flex flex-col items-center justify-center font-bold mt-16 p-6">
                 <h1 className="text-4xl">Tom Charpentier</h1>
