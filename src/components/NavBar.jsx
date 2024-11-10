@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { styles } from "../styles"
 import { redirectLinks } from "../constants";
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
@@ -33,7 +32,7 @@ export default function NavBar() {
     }, []);
 
     return (
-        <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 transition-all duration-500 ease-in-out ${scrolled ? "bg-primary" : "bg-transparent"}`}>
+        <nav className={`px-6 w-full flex items-center py-5 fixed top-0 z-20 transition-all duration-500 ease-in-out ${scrolled ? "bg-primary" : "bg-transparent"}`}>
             <div className="flex items-center justify-start flex-1">
                 <Link to='/'
                     className='flex items-center gap-2'
