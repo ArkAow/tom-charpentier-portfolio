@@ -14,7 +14,7 @@ export default function About() {
 
     return (
         <div id="about"
-          className="relative w-full flex flex-col items-center mt-16 p-10">
+          className="relative w-full flex flex-col items-center mt-16 px-10">
 
             <div className="absolute inset-0  top-3 -left-24 -rotate-[6deg] transform bg-[url('/res/dot.svg')] bg-repeat bg-[length:20px_20px] opacity-40 -z-10" 
                 style={{ width: "150%", height: "60%" }} />
@@ -25,7 +25,7 @@ export default function About() {
                 </span>
             </h1>
 
-            <div className="flex flox-row w-screen p-12 text-justify">
+            <div className="flex flox-row w-screen pr-[15%] lg:pr-0 px-[20%]  text-justify">
                 <div className="mt-8 flex flex-col w-full md:w-3/4 items-left relative">
                     <div className="relative z-10">
                         <p className="mb-2">
@@ -65,11 +65,11 @@ export default function About() {
                 <div className="items-end justify-end relative ml-[5%]">
                     <img 
                         src="/res/about-photo.png" 
-                        className="absolute top-5 left-20 hidden md:flex w-[15vw] max-w-[150px] transition-transform duration-300 hover:scale-125 z-10"
+                        className="absolute top-5 left-20 hidden lg:flex w-[15vw] max-w-[150px] transition-transform duration-300 hover:scale-125 z-10"
                         alt="photo of me :)"/>
                     <img 
                         src="/res/about-photo-back-image.png" 
-                        className="hidden md:flex w-[40vw] max-w-[300px]"/>
+                        className="hidden lg:flex w-[40vw] max-w-[300px]"/>
                 </div>
             </div>
             

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function CompanyCards() {
   return (
-    <div className="pt-10 flex flex-wrap gap-5 justify-start">
+    <div className="pt-10 flex flex-wrap gap-5 justify-start lg:justify-center w-full">
 
       {/* L'université du Limousin*/}
       <button className="w-1/2 group relative h-24 rounded-lg border-2 border-primary bg-tertiary
