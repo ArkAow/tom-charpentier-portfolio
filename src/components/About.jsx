@@ -65,7 +65,7 @@ export default function About() {
                 <div className="items-end justify-end relative ml-[5%]">
                     <img 
                         src="/res/about-photo.png" 
-                        className="absolute top-5 left-20 hidden lg:flex w-[15vw] max-w-[150px] transition-transform duration-300 hover:scale-125 z-10"
+                        className="absolute top-5 left-10 hidden lg:flex w-[15vw] max-w-[200px] transition-transform duration-300 hover:scale-125 z-10"
                         alt="photo of me :)"/>
                     <img 
                         src="/res/about-photo-back-image.png" 
