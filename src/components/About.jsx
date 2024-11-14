@@ -16,7 +16,7 @@ export default function About() {
         <div id="about"
           className="relative w-full flex flex-col items-center mt-16 px-10">
 
-            <div className="absolute inset-0  top-3 -left-24 -rotate-[6deg] transform bg-[url('/res/dot.svg')] bg-repeat bg-[length:20px_20px] opacity-40 -z-10" 
+            <div className="absolute inset-0  top-3 -left-24 -rotate-[6deg] transform bg-[url('res/dot.svg')] bg-repeat bg-[length:20px_20px] opacity-40 -z-10" 
                 style={{ width: "150%", height: "60%" }} />
 
             <h1 className="font-bold text-4xl relative"> About
@@ -37,10 +37,10 @@ export default function About() {
                         </p>                        
                     </div>
                     <img 
-                        src="/icons/computer.svg"
+                        src="icons/computer.svg"
                         className={`stroke-slate-300 w-16 absolute right-20 top-20 transition-all duration-[1000ms] z-0 ${animate ? '-rotate-6' : 'rotate-6'}`}/>
                     <img 
-                        src="/icons/keyboard.svg"
+                        src="icons/keyboard.svg"
                         className={`stroke-slate-300 w-16 absolute right-20 top-40 transition-all duration-[1000ms] z-0 ${animate ? 'rotate-6' : '-rotate-6'}`}/>
 
                     <div className="relative z-10">
@@ -50,25 +50,25 @@ export default function About() {
                     </div>
 
                     <img 
-                        src="/icons/gaming.svg"
+                        src="icons/gaming.svg"
                         className={`stroke-slate-300 w-16 absolute -rotate-12 transition-all duration-[500ms] z-0 ${animate ? 'bottom-10' : 'bottom-16'}`}/>
                     <img 
-                        src="/icons/piano.svg"
+                        src="icons/piano.svg"
                         className={`stroke-slate-300 w-16 absolute -rotate-6 left-20 transition-all duration-[1000ms] z-0 ${animate ? 'bottom-10' : 'bottom-20'}`}/>
                     <img 
-                        src="/icons/cooking.svg"
+                        src="icons/cooking.svg"
                         className={`stroke-slate-300 w-16 absolute rotate-6 left-40 transition-all duration-[1000ms] z-0 ${animate ? 'bottom-10' : 'bottom-20'}`}/>
                     <img 
-                        src="/icons/pen.svg"
+                        src="icons/pen.svg"
                         className={`stroke-slate-300 w-16 absolute rotate-12 left-60 transition-all duration-[500ms] z-0 ${animate ? 'bottom-10' : 'bottom-16'}`}/>   
                 </div> 
                 <div className="items-end justify-end relative ml-[5%]">
                     <img 
-                        src="/res/about-photo.png" 
+                        src="res/about-photo.png" 
                         className="absolute top-5 left-10 hidden lg:flex w-[15vw] max-w-[200px] transition-transform duration-300 hover:scale-125 z-10"
                         alt="photo of me :)"/>
                     <img 
-                        src="/res/about-photo-back-image.png" 
+                        src="res/about-photo-back-image.png" 
                         className="hidden lg:flex w-[40vw] max-w-[300px]"/>
                 </div>
             </div>

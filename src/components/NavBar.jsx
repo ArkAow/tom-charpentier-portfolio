@@ -34,7 +34,7 @@ export default function NavBar() {
                 <Link to='/'
                     className='flex items-center gap-2'
                     onClick={() => { setActive(""); window.scrollTo(0, 0); }}>
-                    <img src="/logos/circular-logo.png" 
+                    <img src="logos/circular-logo.png" 
                         alt="logo" 
                         className="w-12 h-12 object-contain"/>
                     <p className="lg:flex hidden text-white text-[18px] font-bold">
@@ -54,7 +54,7 @@ export default function NavBar() {
             </ul>
 
             <div className="flex justify-end items-center flex-1">
-                <img src={toggle ? "/icons/close.svg" : "/icons/menu.svg"} 
+                <img src={toggle ? "icons/close.svg" : "icons/menu.svg"} 
                     alt="menu" 
                     className="w-[28px] h-[28px] object-container cursor-pointer" 
                     onClick={() => setToggle(!toggle)}/>
@@ -94,7 +94,7 @@ export default function NavBar() {
                         <hr className="w-1/2"/>
                         
                         <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer flex items-center gap-2">
-                            <img src="/logos/youtube.svg" alt="YouTube" className="w-6 h-6 object-contain"/>
+                            <img src="logos/youtube.svg" alt="YouTube" className="w-6 h-6 object-contain"/>
                             <a href="https://youtube.com/playlist?list=PL2twZKJRT6c6y3toJI3vDoC6MlvOuiVYV&si=SpKkVmxkwGuItgAa" target="_blank" rel="noopener noreferrer">
                                 Ressources
                             </a>

@@ -37,9 +37,9 @@ export default function Hero() {
           <p className="text-lg text-secondary">Third year student in Computer Science</p>
         </div>
 
-        <img src="/parallax/stars-1.gif" className="parallax-layer stars-1 w-full" />
-        <img src="/parallax/stars-2.png" className="parallax-layer stars-2 w-full" />
-        <img src="/parallax/stars-3.gif" className="parallax-layer stars-3 w-full" />
+        <img src="parallax/stars-1.gif" className="parallax-layer stars-1 w-full" />
+        <img src="parallax/stars-2.png" className="parallax-layer stars-2 w-full" />
+        <img src="parallax/stars-3.gif" className="parallax-layer stars-3 w-full" />
       </div>
     </section>
   );

@@ -11,12 +11,12 @@ export default function CompanyCards() {
         
         <img
           className="absolute left-9 sm:left-11 top-1/2 -translate-y-1/2 w-16 h-16 z-10 object-contain ease-in-out"
-          src="/logos/iut.svg"
+          src="logos/iut.svg"
           alt="logo"/>
 
         <img
           className="absolute inset-0 w-full h-full opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 group-focus:opacity-100 z-0 object-cover"
-          src="/res/iut-bg.png"
+          src="res/iut-bg.png"
           alt="background"/>
 
         <div className="opacity-0 z-10 sm:group-focus:opacity-100 absolute left-36 top-1/2 transform -translate-y-1/2 text-white text-sm font-medium">
@@ -40,12 +40,12 @@ export default function CompanyCards() {
         
         <img
           className="absolute left-1 sm:left-3 top-1/2 -translate-y-1/2 w-32 h-32 z-10 object-contain ease-in-out"
-          src="/logos/biotonix.png"
+          src="logos/biotonix.png"
           alt="logo"/>
 
         <img
           className="absolute inset-0 w-full h-full opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 group-focus:opacity-100 object-cover"
-          src="/res/biotonix-bg.png"
+          src="res/biotonix-bg.png"
           alt="background"/>
 
         <div className="opacity-0 z-10 sm:group-focus:opacity-100 absolute left-40 top-1/2 transform -translate-y-1/2 text-black text-sm font-medium">
