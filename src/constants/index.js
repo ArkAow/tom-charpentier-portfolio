@@ -58,5 +58,7 @@ export const logos = [
   { name: "Python", url: "/logos/python.svg" },
   { name: "Redis", url: "/logos/redis.svg" },
   { name: "Rust", url: "/logos/rust.svg" },
+  { name: "TailwindCSS", url: "/logos/tailwind.svg" },
   { name: "Unity", url: "/logos/unity.svg" },
+  { name: "Figma", url: "/logos/figma.svg" },
 ];
