@@ -60,5 +60,6 @@ export const logos = [
   { name: "Rust", url: "/logos/rust.svg" },
   { name: "TailwindCSS", url: "/logos/tailwind.svg" },
   { name: "Unity", url: "/logos/unity.svg" },
+  { name: "ViteJS", url: "/logos/vitejs.svg" },
   { name: "Figma", url: "/logos/figma.svg" },
 ];
