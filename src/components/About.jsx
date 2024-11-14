@@ -33,7 +33,9 @@ export default function About() {
                             I am a third year computer science student at the <em>IUT du Limousin</em>.
                         </p>
                         <p className="mb-2">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula ex tortor, sed blandit risus facilisis quis. Nulla fermentum orci eget porta molestie. Aliquam erat volutpat. Curabitur et nibh eget nunc sodales eleifend eget nec lectus. Fusce et diam ac quam eleifend porttitor in a tortor. Ut sit amet lacinia quam. Curabitur et malesuada orci, at dapibus sem. Aliquam fermentum leo enim, sit amet lobortis quam viverra in. Donec sed mauris turpis. Suspendisse gravida odio tempus, tempor magna sed, malesuada diam. Phasellus pretium odio at justo dictum, at rhoncus eros tempor. Ut viverra at felis ut mattis.
+                        I'm passionate about my studies in computer science and love exploring new technologies. In my free time, I enjoy playing the piano, which fuels my creativity. I'm also an avid cook who loves experimenting with new recipes and flavors in the kitchen—though always in an amateur way 😅. I also enjoy listening to music, which is a constant source of inspiration.
+                        <br/><br/>
+                        Like many CS students, I spend a good amount of time gaming. I especially enjoy games that let your imagination run wild, but I also appreciate a good challenge from time to time. In general, I'm a patient person and love learning new things, which makes me adaptable and versatile. I consider myself to be quite creative and resourceful.
                         </p>                        
                     </div>
                     <img 
@@ -45,7 +47,7 @@ export default function About() {
 
                     <div className="relative z-10">
                         <p className="mb-2 relative">
-                            Vivamus varius auctor nulla, non semper sem pharetra vitae. Sed eu varius arcu. Proin molestie sem sed purus ornare cursus. Aliquam quis tellus et diam pretium varius. Etiam id ipsum tincidunt enim varius ultricies ut vitae erat. Proin ut lobortis mi, vel placerat diam. Nullam ut cursus eros. Fusce dignissim condimentum tincidunt. Suspendisse tincidunt tempor velit ac malesuada. Nunc auctor turpis at gravida interdum.
+                        My diverse interests and passion for creativity drive me to stay curious and adaptable, and I'm always excited to take on new challenges, both in tech and beyond.
                         </p>
                     </div>
 
