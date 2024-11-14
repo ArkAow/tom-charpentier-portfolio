@@ -8,19 +8,16 @@ export default function NavBar() {
     const [toggle, setToggle] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
-    useEffect(() => {
-        const handleClickScroll = () => {
-            const element = document.getElementById(active);
-            if (element) {
-              element.scrollIntoView({ behavior: 'smooth'});
-            }
-          };
-    }, []);
+    const handleClickScroll = () => {
+        const element = document.getElementById(active);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     useEffect(() => {
         const handleScroll = () => {
             const YScroll = window.scrollY;
-
             if (YScroll > 70) {
                 setScrolled(true);
             } else {
@@ -36,7 +33,7 @@ export default function NavBar() {
             <div className="flex items-center justify-start flex-1">
                 <Link to='/'
                     className='flex items-center gap-2'
-                    onClick={() => {setActive(""); window.scrollTo(0, 0);}}>
+                    onClick={() => { setActive(""); window.scrollTo(0, 0); }}>
                     <img src="/logos/circular-logo.png" 
                         alt="logo" 
                         className="w-12 h-12 object-contain"/>
@@ -50,7 +47,7 @@ export default function NavBar() {
                 {navLinks.map((nav) => (
                     <li key={nav.id}
                      className={`${active === nav.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
-                     onClick={() => {setActive(nav.title); handleClickScroll}}>
+                     onClick={() => { setActive(nav.title); handleClickScroll(); }}>
                         <a href={`#${nav.id}`}>{nav.title}</a>
                     </li>
                 ))}
@@ -62,7 +59,7 @@ export default function NavBar() {
                     className="w-[28px] h-[28px] object-container cursor-pointer" 
                     onClick={() => setToggle(!toggle)}/>
                     
-                <div className={`${!toggle ? "hidden" : "flex"} p-6 absolute top-20 right-0 mx-4  min-w-[20%] z-10 bg-black bg-opacity-80 rounded-xl`}>
+                <div className={`${!toggle ? "hidden" : "flex"} p-6 absolute top-20 right-0 mx-4 min-w-[20%] z-10 bg-black bg-opacity-80 rounded-xl`}>
 
                     <ul className="list-none flex flex-col gap-10">
                         <div className='sm:hidden flex flex-col gap-10'>
@@ -75,12 +72,13 @@ export default function NavBar() {
                                 onClick={() => {
                                     setToggle(!toggle);
                                     setActive(nav.title);
-                                    handleClickScroll;}}>
+                                    handleClickScroll();
+                                }}>
                                 <a href={`#${nav.id}`}>{nav.title}</a>
                                 </li>
                             ))}
 
-                        <hr className="w-1/2"/>
+                            <hr className="w-1/2"/>
                         </div>
 
                         {redirectLinks.map((link) => (
@@ -90,9 +88,17 @@ export default function NavBar() {
                                  alt="logo" 
                                  className="w-6 h-6 object-contain"/>
                                 <a href={`${link.link}`}
-                                 target="_blank">{link.title}</a>
+                                 target="_blank" rel="noopener noreferrer">{link.title}</a>
                             </li>
                         ))}
+                        <hr className="w-1/2"/>
+                        
+                        <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer flex items-center gap-2">
+                            <img src="/logos/youtube.svg" alt="YouTube" className="w-6 h-6 object-contain"/>
+                            <a href="https://youtube.com/playlist?list=PL2twZKJRT6c6y3toJI3vDoC6MlvOuiVYV&si=SpKkVmxkwGuItgAa" target="_blank" rel="noopener noreferrer">
+                                Ressources
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
