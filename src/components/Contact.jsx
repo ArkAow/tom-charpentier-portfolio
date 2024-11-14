@@ -9,7 +9,6 @@ export default function Contact() {
             <p className="m-2">
                 Feel free to reach out by email if you’re interested in my work.</p>
             <EmailSender />
-            <p>other links</p>
         </div>
     );
 }
