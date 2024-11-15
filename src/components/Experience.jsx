@@ -8,15 +8,15 @@ export default function Experience() {
             <div className="absolute inset-0 top-[30rem] -left-44 rotate-[20deg] transform bg-[url('res/dot.svg')] bg-repeat bg-[length:20px_20px] opacity-40 -z-10" 
                 style={{ width: "150%", height: "19%" }} />
             <div className="relative">
-                {/* Section avant LogoCarousel */}
+
                 <div className="flex flex-row gap-[5%] lg:px-[20%] md:pl-10 items-start">
                     <img
                        src="icons/building.svg"
-                       className="absolute opacity-30 md:relative md:opacity-100 max-w-[200px] pt-[5vh] top-14"
+                       className="absolute z-0 opacity-30 md:relative md:opacity-100 max-w-[200px] pt-[5vh] top-14"
                        alt="image of a building"/>
                     <div>
                         <h1 className="text-4xl font-bold pb-12">My Experience</h1>
-                        <p className="text-justify w-full">
+                        <p className="relative text-justify w-full">
                             Throughout my studies, I have gained extensive experience in various programming languages and development tools. 
                             My academic journey has allowed me to acquire strong foundational skills in software development, with a focus on 
                             three key areas: software development, mobile application development, and web development.

@@ -23,8 +23,8 @@ export default function Hero() {
         <div className="flex sm:hidden w-fit justify-center items-center bg-red-800 text-red-200 p-4 rounded-lg relative mx-6 mt-4">
           <button 
             onClick={() => setShowMessage(false)}
-            className="absolute top-2 left-2 text-red-200 font-bold">
-            ✖
+            className="absolute top-2 left-2 size-8">
+            <img src="res/cross.svg"/>
           </button>
           <p className="text-center px-10">
             This website is meant to be fully experienced on a computer screen!
