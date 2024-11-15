@@ -19,12 +19,14 @@ export default function CompanyCards() {
           alt="background"/>
 
         <div className="absolute opacity-0 z-10 sm:group-focus:opacity-100 left-36 top-1/2 transform -translate-y-1/2 text-white text-sm font-medium">
-            <p className="text-justify w-full pr-5">
-                During my studies, I worked on various group projects, known as SAEs (Situations d’Apprentissage et d’Évaluation), included by my school curriculum.
-                <br/>
-                In my third year, I completed a course scheduling project for my IUT, where my main responsibility was to create a detailed course planning system.
-                <span className="hidden lg:flex">This experience allowed me to strengthen my project management skills, communicate effectively with clients, and deliver a solution that met the needs of my IUT.</span>
-            </p>
+          <p className="text-justify w-full pr-5">
+              During my studies, I worked on various group projects, known as SAEs (Situations d'Apprentissage Évaluées), which were an integral part of my school curriculum.
+              <br/>
+              Among all the SAEs I participated in, the most significant was a development project in my third year. I am currently working on a course scheduling project for my IUT, where my primary responsibility is to create a detailed course planning desktop application. This project leverages web technologies such as React and Symfony to deliver a functional and user-friendly solution.
+              <span className="hidden lg:flex">
+                  These experiences have allowed me to strengthen my project management skills, effectively communicate with clients, and consistently deliver solutions that met the requirements of my IUT across all SAEs.
+              </span>
+          </p>
             <a 
               href="https://www.iut.unilim.fr/"
               className="text-red-950 underline inline-block">
