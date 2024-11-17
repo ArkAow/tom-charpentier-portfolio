@@ -14,7 +14,7 @@ export default function About() {
 
     return (
         <div id="about"
-          className="relative w-full flex flex-col items-center mt-16 px-10">
+          className="relative w-full flex flex-col items-center pt-24 px-10">
 
             <div className="absolute inset-0  top-3 -left-24 -rotate-[6deg] transform bg-[url('res/dot.svg')] bg-repeat bg-[length:20px_20px] opacity-40 -z-10" 
                 style={{ width: "150%", height: "60%" }} />

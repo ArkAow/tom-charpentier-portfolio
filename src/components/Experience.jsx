@@ -4,7 +4,7 @@ import CompagnyCards from "./CompagnyCards";
 
 export default function Experience() {
     return (
-        <div id="experience" className="relative w-screen flex flex-col items-left justify-left mt-16 p-10">
+        <div id="experience" className="relative w-screen flex flex-col items-left justify-left pt-24 p-10">
             <div className="absolute inset-0 top-[30rem] -left-44 rotate-[20deg] transform bg-[url('res/dot.svg')] bg-repeat bg-[length:20px_20px] opacity-40 -z-10" 
                 style={{ width: "150%", height: "19%" }} />
             <div className="relative">
