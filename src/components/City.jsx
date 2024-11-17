@@ -20,14 +20,14 @@ export default function City() {
         const back1 = document.querySelector('.parallax-back-1-layer');
         const back2 = document.querySelector('.parallax-back-2-layer');
         const front = document.querySelector('.parallax-front-layer');
-        const sFront = 1000;
-        const sBack1 = 3000;
+        const sFront = 3000;
+        const sBack1 = 1200;
         const sBack2 = 2000;
         const xOffest = -1.5;
 
         if (parallax && front && back1 && back2) {
           const x = e.clientX;
-          back1.style.transform = `translate(${(x / sBack1) + xOffest}%)`;
+          back1.style.transform = `translate(${(x / sBack1) + -2}%)`;
           back2.style.transform = `translate(${(x / sBack2) + xOffest}%)`;
           front.style.transform = `translate(${(x / sFront) + xOffest}%)`;
         }
