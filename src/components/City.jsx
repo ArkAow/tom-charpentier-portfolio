@@ -49,7 +49,7 @@ export default function City() {
                 <img src="parallax/city-background-1.png" className="parallax-layer city-bg-1" />
                 <img src="parallax/city-background-2.png" className="parallax-layer city-bg-2" />
                 <img src="parallax/city-background-3.png" className="parallax-layer city-bg-3" />
-                <img src="parallax/city-ground.png" className="parallax-layer city-grd" />                
+                <img src="parallax/city-ground.png" className="parallax-layer city-grd translate-y-5" />                
               </div>
 
               <div className="parallax-back-1-layer">
