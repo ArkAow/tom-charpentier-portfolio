@@ -62,4 +62,5 @@ export const logos = [
   { name: "Unity", url: "logos/unity.svg" },
   { name: "ViteJS", url: "logos/vitejs.svg" },
   { name: "Figma", url: "logos/figma.svg" },
+  { name: "Azure DevOps", url: "logos/azure-devops.svg" },
 ];

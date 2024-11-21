@@ -32,7 +32,6 @@ export default function Experience() {
                 
                 <LogoCarousel />
 
-                {/* Section après LogoCarousel */}
                 <div className="lg:px-[20%]">
                     <p className="relative text-justify">
                         In the meantime, I have had the opportunities to work with several companies, where I gained valuable hands-on experience in a professional environment. 
