@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 
 export default function LimogesCompanyCards() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [delayedExpanded, setDelayedExpanded] = useState(true);
+  const [delayedExpanded, setDelayedExpanded] = useState(false);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const buttonRef = useRef(null);
 
