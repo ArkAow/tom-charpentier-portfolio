@@ -14,28 +14,6 @@ export default function City() {
       return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    useEffect(() => {
-      const handleParallax = (e) => {
-        const parallax = document.querySelector('.parallax');
-        const back1 = document.querySelector('.parallax-back-1-layer');
-        const back2 = document.querySelector('.parallax-back-2-layer');
-        const front = document.querySelector('.parallax-front-layer');
-        const sFront = 3000;
-        const sBack1 = 1200;
-        const sBack2 = 2000;
-        const xOffest = -1.5;
-
-        if (parallax && front && back1 && back2) {
-          const x = e.clientX;
-          back1.style.transform = `translate(${(x / sBack1) + -2}%)`;
-          back2.style.transform = `translate(${(x / sBack2) + xOffest}%)`;
-          front.style.transform = `translate(${(x / sFront) + xOffest}%)`;
-        }
-      };
-      window.addEventListener('mousemove', handleParallax);
-      return () => window.removeEventListener('mousemove', handleParallax);
-    }, []);
-
     return (
         <section id="projects"
          className="w-screen h-fit relative">
