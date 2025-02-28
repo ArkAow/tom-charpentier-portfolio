@@ -7,7 +7,7 @@ export default function About() {
         const interval = setInterval(() => {
             setAnimate(true);
             setTimeout(() => setAnimate(false), 500);
-        }, 8000);
+        }, 3000);
 
         return () => clearInterval(interval);
     }, []);

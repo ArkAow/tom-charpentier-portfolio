@@ -42,7 +42,7 @@ export default function Experience() {
                         Here are some companies I have worked for :
                     </div>
                 </div>
-                    <CompagnyCards />
+                <CompagnyCards />
             </div>
         </div>
     );

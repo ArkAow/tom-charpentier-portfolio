@@ -1,4 +1,4 @@
-# Tom's Portfolio
+# My Portfolio
 
 Welcome to my personal portfolio website! You can explore my projects, skills, and experiences at the following link:  
 🌐 **Portfolio Website**: [https://arkaow.github.io/tom-charpentier-portfolio/](https://arkaow.github.io/tom-charpentier-portfolio/)
