@@ -27,7 +27,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <p className="text-xs md:text-sm text-center text-secondary opacity-75">
-          ©2024 Tom Charpentier
+          ©2025 Tom Charpentier
         </p>
       </div>
     </footer>
