@@ -25,7 +25,7 @@ export default function About() {
                 </span>
             </h1>
 
-            <div className="flex flox-row w-screen pr-[15%] lg:pr-0 px-[20%]  text-justify">
+            <div className="flex flox-row w-screen lg:pr-0 px-[28%] text-justify">
                 <div className="mt-8 flex flex-col w-full md:w-3/4 items-left relative">
                     <div className="relative z-10">
                         <p className="mb-2">
@@ -40,10 +40,10 @@ export default function About() {
                     </div>
                     <img 
                         src="icons/computer.svg"
-                        className={`stroke-slate-300 w-16 absolute right-20 top-20 transition-all duration-[1000ms] z-0 ${animate ? '-rotate-6' : 'rotate-6'}`}/>
+                        className={`stroke-slate-300 w-16 absolute -right-20 top-20 transition-all duration-[1000ms] z-0 ${animate ? '-rotate-6' : 'rotate-6'}`}/>
                     <img 
                         src="icons/keyboard.svg"
-                        className={`stroke-slate-300 w-16 absolute right-20 top-40 transition-all duration-[1000ms] z-0 ${animate ? 'rotate-6' : '-rotate-6'}`}/>
+                        className={`stroke-slate-300 w-16 absolute -right-20 top-40 transition-all duration-[1000ms] z-0 ${animate ? 'rotate-6' : '-rotate-6'}`}/>
 
                     <div className="relative z-10">
                         <p className="mb-2 relative">
@@ -53,26 +53,17 @@ export default function About() {
 
                     <img 
                         src="icons/gaming.svg"
-                        className={`stroke-slate-300 w-16 absolute -rotate-12 transition-all duration-[500ms] z-0 ${animate ? 'bottom-10' : 'bottom-16'}`}/>
+                        className={`stroke-slate-300 w-16 absolute -rotate-12 -left-20 transition-all duration-[500ms] z-0 ${animate ? '-bottom-16' : '-bottom-20'}`}/>
                     <img 
                         src="icons/piano.svg"
-                        className={`stroke-slate-300 w-16 absolute -rotate-6 left-20 transition-all duration-[1000ms] z-0 ${animate ? 'bottom-10' : 'bottom-20'}`}/>
+                        className={`stroke-slate-300 w-16 absolute -rotate-6 -left-40 transition-all duration-[1000ms] z-0 ${animate ? '-bottom-16' : '-bottom-24'}`}/>
                     <img 
                         src="icons/cooking.svg"
-                        className={`stroke-slate-300 w-16 absolute rotate-6 left-40 transition-all duration-[1000ms] z-0 ${animate ? 'bottom-10' : 'bottom-20'}`}/>
+                        className={`stroke-slate-300 w-16 absolute rotate-6 -left-60 transition-all duration-[1000ms] z-0 ${animate ? '-bottom-16' : '-bottom-24'}`}/>
                     <img 
                         src="icons/pen.svg"
-                        className={`stroke-slate-300 w-16 absolute rotate-12 left-60 transition-all duration-[500ms] z-0 ${animate ? 'bottom-10' : 'bottom-16'}`}/>   
+                        className={`stroke-slate-300 w-16 absolute rotate-12 -left-80 transition-all duration-[500ms] z-0 ${animate ? '-bottom-16' : '-bottom-20'}`}/>   
                 </div> 
-                <div className="items-end justify-end relative ml-[5%]">
-                    <img 
-                        src="res/about-photo.png" 
-                        className="absolute top-5 left-10 hidden lg:flex w-[15vw] max-w-[200px] transition-transform duration-300 hover:scale-125 z-10"
-                        alt="photo of me :)"/>
-                    <img 
-                        src="res/about-photo-back-image.png" 
-                        className="hidden lg:flex w-[40vw] max-w-[300px]"/>
-                </div>
             </div>
             
         </div>

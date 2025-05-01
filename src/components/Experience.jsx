@@ -9,7 +9,7 @@ export default function Experience() {
                 style={{ width: "150%", height: "19%" }} />
             <div className="relative">
 
-                <div className="flex flex-row gap-[5%] lg:px-[20%] md:pl-10 items-start">
+                <div className="flex flex-row gap-[5%] lg:px-[25%] md:pl-10 items-start">
                     <img
                        src="icons/building.svg"
                        className="absolute z-0 opacity-30 md:relative md:opacity-100 max-w-[200px] pt-[5vh] top-14"
@@ -32,7 +32,7 @@ export default function Experience() {
                 
                 <LogoCarousel />
 
-                <div className="lg:px-[20%]">
+                <div className="lg:px-[25%]">
                     <p className="relative text-justify">
                         In the meantime, I have had the opportunities to work with several companies, where I gained valuable hands-on experience in a professional environment. 
                         Through these roles, I was able to apply my technical skills, collaborate with cross-functional teams, and gain insights into industry practices and workflows.

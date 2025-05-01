@@ -63,4 +63,6 @@ export const logos = [
   { name: "ViteJS", url: "logos/vitejs.svg" },
   { name: "Figma", url: "logos/figma.svg" },
   { name: "Azure DevOps", url: "logos/azure-devops.svg" },
+  { name: "Wordpress", url: "logos/wordpress.svg" },
+  { name: "Shopify", url: "logos/shopify.svg" },
 ];
