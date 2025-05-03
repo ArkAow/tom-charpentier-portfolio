@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CurrentCompanyCards({compagnyName}) {
+export default function CurrentCompanyCards({companyName}) {
 
     return (
         <>
@@ -9,7 +9,7 @@ export default function CurrentCompanyCards({compagnyName}) {
                 overflow-hidden transition-grow duration-300 hover:border-[rgba(249,249,249,0.7)]">
                 <div className="z-10 absolute left-5 top-1/2 transform -translate-y-1/2 text-white text-sm font-bold">
                 <p className="text-left pr-5">
-                    Currently working for {compagnyName}.
+                    Currently working for {companyName}.
                 </p>
                 </div>
             </div >

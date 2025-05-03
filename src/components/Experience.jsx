@@ -1,6 +1,6 @@
 import React from "react";
 import LogoCarousel from "./LogoCaroussel";
-import CompagnyCards from "./CompagnyCards";
+import CompanyCards from "./CompanyCards";
 
 export default function Experience() {
     return (

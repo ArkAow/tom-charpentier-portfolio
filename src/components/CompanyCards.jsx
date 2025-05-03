@@ -1,7 +1,7 @@
 import React from "react";
-import LimogesCompanyCards from "./compagnyCards/LimogesCompagnyCard";
-import BiotonixCompanyCard from "./compagnyCards/BiotonixCompagnyCard";
-import CurrentCompanyCards from "./compagnyCards/CurrentCompagnyCard";
+import LimogesCompanyCards from "./companyCards/LimogesCompanyCard";
+import BiotonixCompanyCard from "./companyCards/BiotonixCompanyCard";
+import CurrentCompanyCards from "./companyCards/CurrentCompanyCard";
 
 export default function CompanyCards() {
   return (
@@ -12,7 +12,7 @@ export default function CompanyCards() {
 
       <hr className="w-1/2 border-t-4 border-accent rounded-xl"/>
       
-      <CurrentCompanyCards compagnyName={"WebProCoder"}/>
+      <CurrentCompanyCards companyName={"WebProCoder"}/>
     </div>
   );
 }
