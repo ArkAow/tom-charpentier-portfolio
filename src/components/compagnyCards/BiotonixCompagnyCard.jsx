@@ -73,7 +73,7 @@ export default function BiotonixCompanyCard() {
           </a >
         </div>
         <div className={`absolute opacity-0 z-10 left-36 top-1/2 transform -translate-y-1/2 text-blue-600 text-sm font-medium
-          ${isExpanded ? "opacity-100 sm:opacity-0" : ""}`}>
+          ${delayedExpanded ? "duration-500 opacity-100 sm:opacity-0" : "duration-0"}`}>
           <p className="w-full justify-center items-center pr-5">
               Biotonix (Canada)
           </p>

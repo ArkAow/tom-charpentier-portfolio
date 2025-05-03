@@ -58,7 +58,7 @@ export default function LimogesCompanyCards() {
 
         <div
           className={`absolute opacity-0 z-10 left-36 top-1/2 transform -translate-y-1/2 text-white text-sm font-medium
-            ${delayedExpanded ? "duration-500 opacity-100" : "duration-0 absolute opacity-0"}`}>
+            ${delayedExpanded ? "duration-500 sm:opacity-100" : "duration-0 absolute opacity-0"}`}>
           <p className="text-justify w-full pr-5">
             During my studies, I worked on various group projects, known as SAEs
             (Situations d'Apprentissage Évaluées), which were an integral part
@@ -85,7 +85,7 @@ export default function LimogesCompanyCards() {
         </div>
         <div
           className={`absolute opacity-0 z-10 left-36 top-1/2 transform -translate-y-1/2 text-white text-sm font-medium
-            ${isExpanded ? "opacity-100 sm:opacity-0" : ""}`}>
+            ${delayedExpanded ? "duration-500 opacity-100 sm:opacity-0" : "duration-0"}`}>
           <p className="w-full justify-center items-center pr-5">
             Université de Limoges (France)
           </p>
