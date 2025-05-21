@@ -40,10 +40,10 @@ export default function About() {
                     </div>
                     <img 
                         src="icons/computer.svg"
-                        className={`stroke-slate-300 w-16 absolute -right-20 top-20 transition-all duration-[1000ms] z-0 ${animate ? '-rotate-6' : 'rotate-6'}`}/>
+                        className={`stroke-slate-300 w-16 absolute -right-20 top-20 transition-all duration-[1000ms] z-0 rotate-12 hover:-rotate-[360deg]`}/>
                     <img 
                         src="icons/keyboard.svg"
-                        className={`stroke-slate-300 w-16 absolute -right-20 top-40 transition-all duration-[1000ms] z-0 ${animate ? 'rotate-6' : '-rotate-6'}`}/>
+                        className={`stroke-slate-300 w-16 absolute -right-20 top-40 transition-all duration-[1000ms] z-0 rotate-12 hover:-rotate-12`}/>
 
                     <div className="relative z-10">
                         <p className="mb-2 relative">
@@ -53,16 +53,16 @@ export default function About() {
 
                     <img 
                         src="icons/gaming.svg"
-                        className={`stroke-slate-300 w-16 absolute -rotate-12 -left-20 transition-all duration-[500ms] z-0 ${animate ? '-bottom-16' : '-bottom-20'}`}/>
+                        className={`stroke-slate-300 w-16 absolute -rotate-12 -left-20 transition-all duration-[500ms] z-10 hover:-bottom-16 ${animate ? '-bottom-16' : '-bottom-20'}`}/>
                     <img 
                         src="icons/piano.svg"
-                        className={`stroke-slate-300 w-16 absolute -rotate-6 -left-40 transition-all duration-[1000ms] z-0 ${animate ? '-bottom-16' : '-bottom-24'}`}/>
+                        className={`stroke-slate-300 w-16 absolute -rotate-6 -left-40 transition-all duration-[1000ms] z-10 hover:-bottom-16 ${animate ? '-bottom-16' : '-bottom-24'}`}/>
                     <img 
                         src="icons/cooking.svg"
-                        className={`stroke-slate-300 w-16 absolute rotate-6 -left-60 transition-all duration-[1000ms] z-0 ${animate ? '-bottom-16' : '-bottom-24'}`}/>
+                        className={`stroke-slate-300 w-16 absolute rotate-6 -left-60 transition-all duration-[1000ms] z-10 hover:-bottom-16 ${animate ? '-bottom-16' : '-bottom-24'}`}/>
                     <img 
                         src="icons/pen.svg"
-                        className={`stroke-slate-300 w-16 absolute rotate-12 -left-80 transition-all duration-[500ms] z-0 ${animate ? '-bottom-16' : '-bottom-20'}`}/>   
+                        className={`stroke-slate-300 w-16 absolute rotate-12 -left-80 transition-all duration-[500ms] z-10 hover:-bottom-16 hover:-rotate-[360deg] ${animate ? '-bottom-16' : '-bottom-20'}`}/>   
                 </div> 
             </div>
             
