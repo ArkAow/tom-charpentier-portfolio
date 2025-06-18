@@ -1,7 +1,7 @@
-import React from "react";
 import LimogesCompanyCards from "./companyCards/LimogesCompanyCard";
 import BiotonixCompanyCard from "./companyCards/BiotonixCompanyCard";
 import CurrentCompanyCards from "./companyCards/CurrentCompanyCard";
+import WebProCoderCompanyCards from "./companyCards/WebProCoderCompanyCard";
 
 export default function CompanyCards() {
   return (
@@ -9,10 +9,12 @@ export default function CompanyCards() {
 
       <LimogesCompanyCards />
       <BiotonixCompanyCard />
-
-      <hr className="w-1/2 border-t-4 border-accent rounded-xl"/>
+      <WebProCoderCompanyCards />
       
+      {/*
+      <hr className="w-1/2 border-t-4 border-accent rounded-xl"/>
       <CurrentCompanyCards companyName={"WebProCoder"}/>
+      */}
     </div>
   );
 }

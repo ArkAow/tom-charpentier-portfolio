@@ -57,14 +57,26 @@ export default function BiotonixCompanyCard() {
           src="res/biotonix-bg.png"
           alt="background"/>
 
-        <div className={`absolute opacity-0 z-10 left-40 top-1/2 transform -translate-y-1/2 text-black text-sm font-medium
-          ${delayedExpanded ? "duration-500 sm:opacity-100" : "duration-0 absolute opacity-0"}`}>
-          <p className="text-justify w-full pr-5">
-            During my second year in computer science, I had the opportunity to intern in Canada, thanks to a partnership between my IUT and the CEGEP of Trois-Rivières, near Montreal.
-            <br/>
-            I took this chance to work in Quebec as a Junior Full Stack Developer at Biotonix, a company specializing in health technology, where I contributed to their BTX app.
-            <br/>
-            <span className="hidden lg:flex">In this role, I developed new features and debugged the application using tools like Angular and .NET.<br/>Working in a foreign country improved my adaptability and cross-cultural communication skills, making this an valuable professional and personnal experience.</span>
+        <div
+          className={`absolute opacity-0 z-10 left-36 top-1/2 transform -translate-y-1/2 text-black text-sm font-medium mx-5
+            ${delayedExpanded ? "duration-500 sm:opacity-100" : "duration-0 absolute opacity-0"}`}>
+          <p className="text-justify w-[85%]">
+            During my studies, I worked on various group projects, known as SAEs
+            (Situations d'Apprentissage Évaluées), which were an integral part
+            of my school curriculum.
+            <br />
+            Among all the SAEs I participated in, the most significant was a
+            development project in my third year. I am currently working on a
+            course scheduling project for my IUT, where my primary
+            responsibility is to create a detailed course planning desktop
+            application. This project leverages web technologies such as React
+            and Symfony to deliver a functional and user-friendly solution.
+            <span className="hidden lg:flex">
+              These experiences have allowed me to strengthen my project
+              management skills, effectively communicate with clients, and
+              consistently deliver solutions that met the requirements of my
+              IUT across all SAEs.
+            </span>
           </p>
           <a 
             href="https://biotonix.com/"
@@ -72,10 +84,11 @@ export default function BiotonixCompanyCard() {
             biotonix.com
           </a >
         </div>
-        <div className={`absolute opacity-0 z-10 left-36 top-1/2 transform -translate-y-1/2 text-blue-600 text-sm font-medium
-          ${delayedExpanded ? "duration-500 opacity-100 sm:opacity-0" : "duration-0"}`}>
+        <div
+          className={`absolute opacity-0 z-10 left-36 top-1/2 transform -translate-y-1/2 text-blue-600 text-sm font-medium
+            ${delayedExpanded ? "duration-500 opacity-100 sm:opacity-0" : "duration-0"}`}>
           <p className="w-full justify-center items-center pr-5">
-              Biotonix (Canada)
+            Biotonix (Canada)
           </p>
         </div>
       </button >
