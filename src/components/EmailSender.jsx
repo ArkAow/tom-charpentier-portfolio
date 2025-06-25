@@ -15,30 +15,29 @@ export const EmailSender = () => {
     e.preventDefault();
 
     if (!userName || !userEmail || !message) {
-      console.log('Tous les champs doivent être remplis');
+      console.log('All fields must be filled');
       return;
     }
 
-    setIsLoading(true); // Début du chargement
+    setIsLoading(true);
 
     emailjs
-      .sendForm('service_0qh8pc7', 'template_qtrvl1a', form.current, {
-        publicKey: 'MTCQoTPA3RunQyO2w',
+      .sendForm('service_8v6xfdi', 'template_baopfjp', form.current, {
+        publicKey: 'eCIuF73wUimEoKFPw',
       })
       .then(
         () => {
-          setIsLoading(false); // Fin du chargement
-          toast.success('Email envoyé avec succès !'); // Toast de succès
+          setIsLoading(false);
+          toast.success('Email sent');
 
-          // Réinitialise le formulaire
           setUserName('');
           setUserEmail('');
           setMessage('');
         },
         (error) => {
-          setIsLoading(false); // Fin du chargement
-          console.error('FAILED...', error.text);
-          toast.error('Échec de l\'envoi de l\'email.');
+          setIsLoading(false);
+          console.error('FAILED...', error);
+          toast.error('Failed to send email');
         },
       );
   };
@@ -47,41 +46,70 @@ export const EmailSender = () => {
 
   return (
     <div className="flex flex-row bg-tertiary rounded-xl w-full md:w-1/2 p-8 shadow-lg">
-      <form className="flex flex-col w-full space-y-4" ref={form} onSubmit={sendEmail}>
-        <label className="text-sm font-medium text-gray-700">Your Name</label>
-        <input
-          type="text"
-          name="user_name"
-          value={userName}
-          onChange={(e) => setUserName(e.target.value)}
-          className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-          placeholder="Enter your name"/>
+      <form className="flex flex-col w-full space-y-6" ref={form} onSubmit={sendEmail}>
+        {/* Name */}
+        <div className="relative w-full">
+          <input
+            type="text"
+            name="user_name"
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
+            placeholder=" "
+            className="peer w-full px-3 pt-6 pb-2 bg-transparent text-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"/>
+          <label
+            htmlFor="user_name"
+            className="absolute left-3 -top-2 text-sm text-secondary bg-tertiary px-1 transition-all duration-200 transform scale-90 origin-left
+              peer-placeholder-shown:scale-100 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400
+              peer-focus:top-[-10px] peer-focus:scale-90 peer-focus:text-secondary">
+            Your Name
+          </label>
+        </div>
 
-        <label className="text-sm font-medium text-gray-700">Your Email</label>
-        <input
-          type="email"
-          name="user_email"
-          value={userEmail}
-          onChange={(e) => setUserEmail(e.target.value)}
-          className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-          placeholder="Enter your email"/>
+        {/* Email */}
+        <div className="relative w-full">
+          <input
+            type="email"
+            name="user_email"
+            value={userEmail}
+            onChange={(e) => setUserEmail(e.target.value)}
+            placeholder=" "
+            className="peer w-full px-3 pt-6 pb-2 bg-transparent text-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"/>
+          <label
+            htmlFor="user_email"
+            className="absolute left-3 -top-2 text-sm text-secondary bg-tertiary px-1 transition-all duration-200 transform scale-90 origin-left
+              peer-placeholder-shown:scale-100 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400
+              peer-focus:top-[-10px] peer-focus:scale-90 peer-focus:text-secondary">
+            Your Email
+          </label>
+        </div>
 
-        <label className="text-sm font-medium text-gray-700">Your Message</label>
-        <textarea
-          name="message"
-          rows="4"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-          placeholder="Type your message here"/>
+        {/* Message */}
+        <div className="relative w-full">
+          <textarea
+            name="message"
+            rows="4"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            placeholder=" "
+            className="peer w-full px-3 pt-6 pb-2 bg-transparent text-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"/>
+          <label
+            htmlFor="message"
+            className="absolute left-3 -top-2 text-sm text-secondary bg-tertiary px-1 transition-all duration-200 transform scale-90 origin-left
+              peer-placeholder-shown:scale-100 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400
+              peer-focus:top-[-10px] peer-focus:scale-90 peer-focus:text-secondary">
+            Your Message
+          </label>
+        </div>
 
+        {/* Submit */}
         <button
           type="submit"
           disabled={!isFormComplete || isLoading}
-          className={`p-2 mt-4 text-white rounded-md cursor-pointer focus:ring-2 focus:ring-blue-400 focus:outline-none ${
+          className={`p-2 mt-4 rounded-md focus:ring-2 focus:ring-secondary focus:outline-none ${
             isFormComplete && !isLoading
-              ? 'bg-blue-500 hover:bg-blue-600'
-              : 'bg-gray-400 cursor-not-allowed'}`}>
+              ? 'bg-primary hover:bg-white cursor-pointer text-white hover:text-primary'
+              : 'bg-accent cursor-not-allowed text-gray-700'
+          }`}>
           {isLoading ? (
             <span className="flex items-center justify-center">
               <svg
@@ -105,7 +133,9 @@ export const EmailSender = () => {
               </svg>
               Sending...
             </span>
-          ) : ('Send')}
+          ) : (
+            'Send'
+          )}
         </button>
       </form>
       <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
