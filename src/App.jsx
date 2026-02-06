@@ -19,7 +19,7 @@ const App = () => {
         </div>  
         <About />
         <Experience />
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
       </div>
     </BrowserRouter>

@@ -7,8 +7,8 @@ export default function CompanyCards() {
   return (
     <div className="pt-10 flex flex-wrap gap-5 justify-start lg:justify-center w-full">
 
-      <LimogesCompanyCards />
       <BiotonixCompanyCard />
+      <LimogesCompanyCards />
       <WebProCoderCompanyCards />
       
       {/*
