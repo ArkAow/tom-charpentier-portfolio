@@ -29,14 +29,14 @@ export default function About() {
                 <div className="mt-8 flex flex-col w-full md:w-3/4 items-left relative">
                     <div className="relative z-10">
                         <p className="mb-2">
-                            Hi, I am Tom Charpentier.
-                            I am a third year computer science student at the <em>IUT du Limousin</em>.
+                            Hi, I am Tom Charpentier.<br />
+                            I am a third year computer science student at <em>Poitiers University</em>.
                         </p>
                         <p className="mb-2">
-                        I'm passionate about my studies in computer science and love exploring new technologies. In my free time, I enjoy playing the piano, which fuels my creativity. I'm also an avid cook who loves experimenting with new recipes and flavors in the kitchen—though always in an amateur way 😅. I also enjoy listening to music, which is a constant source of inspiration.
-                        <br/><br/>
-                        Like many CS students, I spend a good amount of time gaming. I especially enjoy games that let your imagination run wild, but I also appreciate a good challenge from time to time. In general, I'm a patient person and love learning new things, which makes me adaptable and versatile. I consider myself to be quite creative and resourceful.
-                        </p>                        
+                        I'm passionate about computer science and love exploring new technologies. In my free time, I enjoy playing the piano and guitar, which fuels my creativity. I also like cooking and experimenting with new recipes and flavors in the kitchen. I really enjoy listening to music and watching movies.
+                        <br /><br />
+                        Like many CS students, I spend a good amount of time gaming. I especially enjoy games that let your imagination run wild, but I also appreciate a good challenge from time to time. In general, I'm a patient person and love learning new things. I consider myself to be quite creative and resourceful.
+                        </p>
                     </div>
                     <img 
                         src="icons/computer.svg"
