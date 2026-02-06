@@ -17,14 +17,18 @@ export default function Experience() {
                     <div>
                         <h1 className="text-4xl font-bold pb-12">My Experience</h1>
                         <p className="relative text-justify w-full">
+                            Graduated with a Bachelor of Technology in Computer Science (BUT Informatique) from the IUT du Limousin, 
+                            I am currently pursuing the third year of a Bachelor's degree in Computer Science at the University of Poitiers, 
+                            with the goal of obtaining a Master's degree.
+                            <br /><br />
                             Throughout my studies, I have gained extensive experience in various programming languages and development tools. 
                             My academic journey has allowed me to acquire strong foundational skills in software development, with a focus on 
                             three key areas: software development, mobile application development, and web development.
-                            <br/><br/>
+                            <br /><br />
                             This versatile skill set enables me to adapt to diverse project requirements and to collaborate effectively within 
                             multidisciplinary teams. I am committed to continuous learning and staying updated with the latest advancements in 
                             technology to provide innovative solutions and deliver high-quality work.
-                            <br/><br/>
+                            <br /><br />
                             Here are some technologies I have worked with :
                         </p>
                     </div>  

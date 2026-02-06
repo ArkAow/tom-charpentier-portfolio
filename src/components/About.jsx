@@ -33,9 +33,13 @@ export default function About() {
                             I am a third year computer science student at <em>Poitiers University</em>.
                         </p>
                         <p className="mb-2">
-                        I'm passionate about computer science and love exploring new technologies. In my free time, I enjoy playing the piano and guitar, which fuels my creativity. I also like cooking and experimenting with new recipes and flavors in the kitchen. I really enjoy listening to music and watching movies.
+                        I'm passionate about computer science and love exploring new technologies. In my free time, I enjoy playing the piano and guitar, 
+                        which fuels my creativity. I also like cooking and experimenting with new recipes and flavors in the kitchen. 
+                        I really enjoy listening to music and watching movies.
                         <br /><br />
-                        Like many CS students, I spend a good amount of time gaming. I especially enjoy games that let your imagination run wild, but I also appreciate a good challenge from time to time. In general, I'm a patient person and love learning new things. I consider myself to be quite creative and resourceful.
+                        Like many CS students, I spend a good amount of time gaming. I especially enjoy games that let your imagination run wild, 
+                        but I also appreciate a good challenge from time to time. In general, I'm a patient person and love learning new things. 
+                        I consider myself to be quite creative and resourceful.
                         </p>
                     </div>
                     <img 
@@ -47,7 +51,8 @@ export default function About() {
 
                     <div className="relative z-10">
                         <p className="mb-2 relative">
-                        My diverse interests and passion for creativity drive me to stay curious and adaptable, and I'm always excited to take on new challenges, both in tech and beyond.
+                        My diverse interests and passion for creativity drive me to stay curious and adaptable, 
+                        and I'm always excited to take on new challenges, both in tech and beyond.
                         </p>
                     </div>
 
