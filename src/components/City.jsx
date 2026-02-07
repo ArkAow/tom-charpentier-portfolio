@@ -16,7 +16,7 @@ export default function City() {
 
     return (
         <section id="projects"
-         className="w-screen h-fit relative">
+         className="w-screen h-fit relative hidden sm:block">
             
           <div className="city-parallax-container relative">
             <img src="parallax/city-moon.png" className="parallax-layer city-moon" />
