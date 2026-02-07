@@ -24,7 +24,7 @@ const Footer = () => {
         </ul>
 
         <p className="text-xs md:text-sm text-center text-secondary opacity-75">
-          ©2025 Tom Charpentier
+          by Tom Charpentier
         </p>
       </div>
     </footer>
