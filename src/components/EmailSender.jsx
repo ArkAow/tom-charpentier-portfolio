@@ -46,7 +46,7 @@ export const EmailSender = () => {
           <label className="absolute left-3 -top-2 text-sm text-secondary bg-tertiary px-1
             peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400
             peer-focus:top-[-10px] peer-focus:text-secondary pointer-events-none transition-all duration-100">
-            Your Name
+            Your Name <span className="text-red-600">*</span>
           </label>
         </div>
 
@@ -62,7 +62,7 @@ export const EmailSender = () => {
           <label className="absolute left-3 -top-2 text-sm text-secondary bg-tertiary px-1
             peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400
             peer-focus:top-[-10px] peer-focus:text-secondary pointer-events-none transition-all duration-100">
-            Your Message
+            Your Message <span className="text-red-600">*</span>
           </label>
         </div>
 
