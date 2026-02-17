@@ -14,6 +14,13 @@ export default function City() {
       return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const scrollToAbout = () => {
+      const section = document.querySelector("#about");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
     return (
         <section id="projects"
          className="w-screen h-fit relative hidden sm:block">
@@ -29,7 +36,21 @@ export default function City() {
                 <img src="parallax/city-background-32.png" className="parallax-layer city-bg-3" />
                 <img src="parallax/city-ground.png" className="parallax-layer city-grd translate-y-5" />                
               </div>
-            </div>           
+            </div>
+
+            <button onClick={scrollToAbout}
+              className=" absolute top-10 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full flex items-center justify-center 
+              text-white ring-2 ring-white bg-transparent transition-all duration-300 ease-out 
+              hover:scale-110 hover:ring-4 hover:ring-white/60 hover:shadow-[0_0_20px_rgba(255,255,255,0.35)] animate-[pulse_2.5s_ease-in-out_infinite]">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
           </div>
         </section>
     );

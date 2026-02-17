@@ -15,8 +15,8 @@ export const redirectLinks = [
 
 export const navLinks = [
   {
-    id: "projects",
-    title: "Projects",
+    id: "hero", // TO-DO "projects" but for now its just home btn
+    title: "Home",
   },
   {
     id: "about",
