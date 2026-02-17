@@ -43,6 +43,7 @@ export const logos = [
   { name: "C", url: "logos/c.svg" },
   { name: "C++", url: "logos/cpp.svg" },
   { name: "C#", url: "logos/cs.svg" },
+  { name: "Ocaml", url: "logos/ocaml.svg" },
   { name: "SQL Databases (mySQL, postGre, ...)", url: "logos/db.svg" },
   { name: "MongoDB", url: "logos/mongodb.svg" },
   { name: "Cassandra", url: "logos/cassandra.svg" },
@@ -65,4 +66,5 @@ export const logos = [
   { name: "Azure DevOps", url: "logos/azure-devops.svg" },
   { name: "Wordpress", url: "logos/wordpress.svg" },
   { name: "Shopify", url: "logos/shopify.svg" },
+  { name: "Arduino", url: "logos/arduino.svg" },
 ];
