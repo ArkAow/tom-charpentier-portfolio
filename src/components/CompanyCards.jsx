@@ -14,8 +14,8 @@ export default function CompanyCards() {
       
       
       <hr className="w-1/2 border-t-4 border-accent rounded-xl"/>
-      {/* <CurrentCompanyCards companyName={"WebProCoder"}/> */}
-      <LookingForCompanyCards weekLenght={"10"} startingDate={"13 April 2026"} endingDate={"June 2026"}/>
+      <CurrentCompanyCards companyName={"LIAS (ISAE-ENSMA)"}/>
+      {/*<LookingForCompanyCards weekLenght={"10"} startingDate={"13 April 2026"} endingDate={"June 2026"}/>*/}
     </div>
   );
 }
